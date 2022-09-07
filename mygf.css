@@ -1,0 +1,190 @@
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ body { padding: 0; 
+    margin: 0;
+    height: 100%;}
+ body { display: flex; 
+    justify-content: center;
+     align-items: center;
+     background-color: #000000;}
+
+.circle {
+    height: 500px;
+    width: 500px;
+    padding: 5px;
+    align-items: center; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 20px solid rgb(185, 7, 7);
+    position: relative;
+    top: 100px;
+    z-index: -2;
+    overflow: hidden;
+}
+.hair{
+    height: 400px;
+    width: 250px;
+    background-color: #5e2f70;
+    border-radius: 280px 280px 10px 10px;
+    position: relative;
+}
+.bow {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgba(168, 12, 241, 0.726);
+    border-right: 20px solid rgba(168, 12, 241, 0.726);;
+    position: relative;
+    left: 40%;
+    top: 10px;
+  }
+ .face{
+    height: 190px;
+    width: 180px;
+    background-color: #ffdbbb;
+    position: absolute;
+    left:15%;
+    transform: translateX(-50);
+    top: 64px;
+    border-radius: 50px 50px 90px 90px;
+    box-shadow:0 4px 4px #302626;
+    z-index: 1;
+ }
+ .eyes{
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 43px;
+     width:129px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .eyes .eye{
+     display: inline-block;
+     position: relative;
+     width: 40px;
+     height: 40px;
+     background-color: #1d1d1d;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ .eyes .eye::before, .eyes.eye::after{
+     content:"";
+     position: absolute;
+     border-radius: 50%;
+     background-color: rgb(243, 247, 250);
+ }
+ .eyes .eye::before{
+    width: 18px;
+    height: 18px;
+    top: 2px;  
+ }
+ .glare{position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    top: 57px;
+    display: flex;
+    width:129px;
+    justify-content: space-between;
+
+ }
+ .glares .glare{
+     display: inline-block;
+     position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+     background-color: rgb(243, 247, 250);
+      }
+.glares .glare1{
+        display: inline-block;
+        position: relative;
+       width: 10px;
+       height: 10px;
+       border-radius: 50%;
+        background-color: rgb(243, 247, 250);
+        left: 70%;
+        top: 57px;
+         }
+ .blushes{
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 94px;
+     width: 75%;
+     display: flex;
+     justify-content: space-between;
+ } 
+ .blush{
+     width: 39px;
+     height: 14px;
+     background-color: #ec6666;
+     border-radius: 50%;
+ }
+ .mouth{
+     width: 44px;
+     height: 40px;
+     background-color: #e65039;
+     border-radius:0 0 60px 60px;
+     position:absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     overflow: hidden;
+     top:128px;
+ }
+ .mouth::before{
+     content:"";
+     position: absolute;
+     top: 15px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 48px;
+     height: 48px;
+     background-color: #fe9382;
+     border-radius: 50%;
+ }
+.neck{
+    width: 40px;
+    height:60px;
+    background-color:#ffdbbb;
+    border-radius: 10px;
+    position: absolute;
+    left:43%;
+    top: 230px;
+}
+.neck::after{
+     content:"";
+     position: absolute;
+     width: 50px;
+     height: 30px;
+     background-color: #ffffff;
+     left: 50%;
+     transform: translateX(-50%);
+    bottom: -20px;
+    border-radius: 2px 2px 12px 12px;
+    box-shadow: 0 4px 4px rgb(66, 63, 63);
+    }
+.cloth{
+     width: 155px;
+     height: 160px;
+     border-radius: 120px 120px 50px 50px;
+     background-color: crimson;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     bottom: -13%;
+     box-shadow: 0 10px 20px rgba(0,0,0.25);
+}
+
+
+  
+
+/* name suggestion: customize ur gf  given by */
